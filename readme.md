@@ -10,6 +10,13 @@ To further explore the models, an interactive Streamlit application was develope
 
 ---
 
+
+## Live Demo
+
+**Try the deployed application here:** **https://resnetvsplaincnn.streamlit.app/**
+
+---
+
 ## Motivation
 
 While reading the ResNet paper, I was particularly interested in the degradation problem observed in deep neural networks. The authors showed that simply increasing network depth can lead to higher training error, despite deeper networks having greater representational power.
