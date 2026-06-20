@@ -6,6 +6,11 @@ from PIL import Image
 
 from models import SimpleCNN
 
+st.set_page_config(
+    page_title="CNN vs ResNet18",
+    layout="centered"
+)
+
 cnn = SimpleCNN()
 
 cnn.load_state_dict(
@@ -45,6 +50,31 @@ classes = [
     'ship',
     'truck'
 ]
+
+st.title("CNN vs ResNet18 Image Classifier")
+
+st.write(
+    
+    """
+    This project compares a traditional Convolutional Neural Network (CNN)
+    and ResNet18 on the CIFAR-10 dataset.
+
+    Upload an image belonging to one of the CIFAR-10 classes and compare
+    the predictions produced by both models.
+
+    Supported classes: airplane, automobile, bird, cat,
+    deer, dog, frog, horse, ship, truck.
+    
+    Images belonging to other categories will still be assigned to the closest available class.
+
+
+    """
+
+    # st.markdown("---")
+
+)
+
+st.markdown("---")
 
 uploaded_file = st.file_uploader(
     "Upload an image",
